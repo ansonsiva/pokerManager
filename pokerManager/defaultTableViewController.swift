@@ -9,6 +9,7 @@
 import UIKit
 
 var gamekind = ["Texas Holdem","Omaha","HORSE","7 Card Stud","7 Card Stud 8","Omaha 8","Razz","Black Jack","Dealer's Choice"]
+var stakes = ["1/2","2/4","2/5","5/10","10/20","20/40","25/50","50/100","100/200","200/400","300/600","500/1000","1k/2k"]
 
 
 class defaultTableViewController: UITableViewController {

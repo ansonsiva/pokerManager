@@ -12,7 +12,7 @@ class gamekindTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.hidesBackButton = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,23 +41,18 @@ class gamekindTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "gamekindCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "gamekindCell", for: indexPath) 
 
         // Configure the cell...
         cell.textLabel?.text = gamekind[indexPath.row]
         cell.isSelected = false
-        print(gamekind[indexPath.row])
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)
-        if cell?.accessoryType == .none{
-            cell?.accessoryType = .checkmark
-        }else{
-            cell?.accessoryType = .none
-        }
         
+        recordnow.gamekind = gamekind[indexPath.row]
         
     }
     /*

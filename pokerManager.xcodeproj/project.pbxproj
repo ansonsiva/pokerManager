@@ -17,6 +17,9 @@
 		88CE3A9D1EA74B6900CF39F4 /* defaultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3A9C1EA74B6900CF39F4 /* defaultTableViewController.swift */; };
 		88CE3A9F1EA74F4300CF39F4 /* addTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3A9E1EA74F4300CF39F4 /* addTableViewController.swift */; };
 		88CE3AA11EA75B5600CF39F4 /* gamekindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */; };
+		88F94F3D1EA797A700C0E98B /* recordClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F94F3C1EA797A700C0E98B /* recordClass.swift */; };
+		88F94F3F1EA7C55E00C0E98B /* blindsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F94F3E1EA7C55E00C0E98B /* blindsTableViewController.swift */; };
+		88F94F411EA7C57400C0E98B /* gametypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F94F401EA7C57400C0E98B /* gametypeTableViewController.swift */; };
 		9B6BC8070E7EDDFBF73D3E17 /* Pods_pokerManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359A80053706A36F35829646 /* Pods_pokerManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		88CE3A9C1EA74B6900CF39F4 /* defaultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaultTableViewController.swift; sourceTree = "<group>"; };
 		88CE3A9E1EA74F4300CF39F4 /* addTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addTableViewController.swift; sourceTree = "<group>"; };
 		88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gamekindTableViewController.swift; sourceTree = "<group>"; };
+		88F94F3C1EA797A700C0E98B /* recordClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recordClass.swift; sourceTree = "<group>"; };
+		88F94F3E1EA7C55E00C0E98B /* blindsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blindsTableViewController.swift; sourceTree = "<group>"; };
+		88F94F401EA7C57400C0E98B /* gametypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gametypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +128,8 @@
 				8813C9501EA5DDC5008708B8 /* AppDelegate.swift */,
 				8813C9541EA5DDC5008708B8 /* SecondViewController.swift */,
 				8813C9561EA5DDC5008708B8 /* Main.storyboard */,
-				88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */,
+				88F94F441EA7D15300C0E98B /* second level */,
+				88F94F3C1EA797A700C0E98B /* recordClass.swift */,
 				88CE3A9E1EA74F4300CF39F4 /* addTableViewController.swift */,
 				88CE3A9C1EA74B6900CF39F4 /* defaultTableViewController.swift */,
 				8813C9591EA5DDC5008708B8 /* Assets.xcassets */,
@@ -156,6 +163,16 @@
 			);
 			name = SQLiteDB;
 			path = ../../quitSmoking/quitSmoking;
+			sourceTree = "<group>";
+		};
+		88F94F441EA7D15300C0E98B /* second level */ = {
+			isa = PBXGroup;
+			children = (
+				88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */,
+				88F94F401EA7C57400C0E98B /* gametypeTableViewController.swift */,
+				88F94F3E1EA7C55E00C0E98B /* blindsTableViewController.swift */,
+			);
+			name = "second level";
 			sourceTree = "<group>";
 		};
 		EFE4F8B76A23B6F2FC719DA4 /* Pods */ = {
@@ -356,9 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8813C9551EA5DDC5008708B8 /* SecondViewController.swift in Sources */,
+				88F94F3D1EA797A700C0E98B /* recordClass.swift in Sources */,
 				8813C9511EA5DDC5008708B8 /* AppDelegate.swift in Sources */,
 				88CE3AA11EA75B5600CF39F4 /* gamekindTableViewController.swift in Sources */,
+				88F94F3F1EA7C55E00C0E98B /* blindsTableViewController.swift in Sources */,
 				88CE3A9D1EA74B6900CF39F4 /* defaultTableViewController.swift in Sources */,
+				88F94F411EA7C57400C0E98B /* gametypeTableViewController.swift in Sources */,
 				88CE3A9F1EA74F4300CF39F4 /* addTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

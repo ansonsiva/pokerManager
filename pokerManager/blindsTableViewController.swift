@@ -1,57 +1,25 @@
 //
-//  addTableViewController.swift
+//  blindsTableViewController.swift
 //  pokerManager
 //
-//  Created by Huck on 2017/4/19.
+//  Created by Huck on 2017/4/20.
 //  Copyright © 2017年 JunZheng. All rights reserved.
 //
 
 import UIKit
 
-var recordnow = recordClass(gamekind: "Texas Holdem", stakes: "1/2", limit: "No Limit", buyin: 0, timecost: 0, cashout: 0, location: "线上", pumping: 0, remark: "this class is not key value coding-compliant for the key theKey")
+class blindsTableViewController: UITableViewController {
 
-class addTableViewController: UITableViewController {
-
-    @IBOutlet var gamekindLabel: UILabel!
-    @IBOutlet var limitLabel: UILabel!
-    @IBOutlet var stakesLabel: UILabel!
-    @IBOutlet var locationLabel: UILabel!
-    @IBOutlet var timecostLabel: UILabel!
-    @IBOutlet var buyinLabel: UILabel!
-    @IBOutlet var pumpingLabel: UILabel!
-    @IBOutlet var cashoutLabel: UILabel!
-    @IBOutlet var remarkLabel: UILabel!
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = true
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        gamekindLabel.text = recordnow.gamekind
-        stakesLabel.text = recordnow.stakes
-        limitLabel.text = recordnow.limit
-        locationLabel.text = recordnow.location
-        timecostLabel.text = String(recordnow.timecost)
-        buyinLabel.text = String(recordnow.buyin)
-        pumpingLabel.text = String(recordnow.pumping)
-        cashoutLabel.text = String(recordnow.cashout)
-        remarkLabel.text = recordnow.remark
-        print(remarkLabel.text!)
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -66,26 +34,24 @@ class addTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 9
+        return stakes.count
     }
+
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "buyinPopover" {
-            let popoverViewController = segue.destination
-            popoverViewController.popoverPresentationController?.delegate = self
-        }
-    }
-
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "buyinCell", for: indexPath)
 
-        // Configure the cell...
-        
+        cell.textLabel?.text = stakes[indexPath.row]
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        recordnow.stakes = stakes[indexPath.row]
+        
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -132,10 +98,4 @@ class addTableViewController: UITableViewController {
     }
     */
 
-}
-
-extension addTableViewController: UIPopoverPresentationControllerDelegate {
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.none
-    }
 }
