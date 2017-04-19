@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8813C9511EA5DDC5008708B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813C9501EA5DDC5008708B8 /* AppDelegate.swift */; };
-		8813C9531EA5DDC5008708B8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813C9521EA5DDC5008708B8 /* FirstViewController.swift */; };
 		8813C9551EA5DDC5008708B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813C9541EA5DDC5008708B8 /* SecondViewController.swift */; };
 		8813C9581EA5DDC5008708B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8813C9561EA5DDC5008708B8 /* Main.storyboard */; };
 		8813C95A1EA5DDC5008708B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8813C9591EA5DDC5008708B8 /* Assets.xcassets */; };
 		8813C95D1EA5DDC5008708B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8813C95B1EA5DDC5008708B8 /* LaunchScreen.storyboard */; };
 		8813C9681EA5DDC5008708B8 /* pokerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813C9671EA5DDC5008708B8 /* pokerManagerTests.swift */; };
 		8813C9731EA5DDC5008708B8 /* pokerManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813C9721EA5DDC5008708B8 /* pokerManagerUITests.swift */; };
+		88CE3A9D1EA74B6900CF39F4 /* defaultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3A9C1EA74B6900CF39F4 /* defaultTableViewController.swift */; };
+		88CE3A9F1EA74F4300CF39F4 /* addTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3A9E1EA74F4300CF39F4 /* addTableViewController.swift */; };
+		88CE3AA11EA75B5600CF39F4 /* gamekindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */; };
+		9B6BC8070E7EDDFBF73D3E17 /* Pods_pokerManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359A80053706A36F35829646 /* Pods_pokerManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0ED641E067CBCE2BB9181A /* Pods-pokerManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokerManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokerManager/Pods-pokerManager.debug.xcconfig"; sourceTree = "<group>"; };
+		359A80053706A36F35829646 /* Pods_pokerManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokerManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E74C1AE9D09612F7FB6960 /* Pods-pokerManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokerManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokerManager/Pods-pokerManager.release.xcconfig"; sourceTree = "<group>"; };
 		8813C94D1EA5DDC5008708B8 /* pokerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8813C9501EA5DDC5008708B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8813C9521EA5DDC5008708B8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		8813C9541EA5DDC5008708B8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8813C9571EA5DDC5008708B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8813C9591EA5DDC5008708B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		8813C96E1EA5DDC5008708B8 /* pokerManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokerManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8813C9721EA5DDC5008708B8 /* pokerManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokerManagerUITests.swift; sourceTree = "<group>"; };
 		8813C9741EA5DDC5008708B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88CE3A9C1EA74B6900CF39F4 /* defaultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaultTableViewController.swift; sourceTree = "<group>"; };
+		88CE3A9E1EA74F4300CF39F4 /* addTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addTableViewController.swift; sourceTree = "<group>"; };
+		88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gamekindTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6BC8070E7EDDFBF73D3E17 /* Pods_pokerManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B32058739C77F87F4B4A30F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				359A80053706A36F35829646 /* Pods_pokerManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8813C9441EA5DDC5008708B8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,8 @@
 				8813C9661EA5DDC5008708B8 /* pokerManagerTests */,
 				8813C9711EA5DDC5008708B8 /* pokerManagerUITests */,
 				8813C94E1EA5DDC5008708B8 /* Products */,
+				EFE4F8B76A23B6F2FC719DA4 /* Pods */,
+				3B32058739C77F87F4B4A30F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +118,13 @@
 		8813C94F1EA5DDC5008708B8 /* pokerManager */ = {
 			isa = PBXGroup;
 			children = (
+				88CE3A891EA73F9B00CF39F4 /* SQLiteDB */,
 				8813C9501EA5DDC5008708B8 /* AppDelegate.swift */,
-				8813C9521EA5DDC5008708B8 /* FirstViewController.swift */,
 				8813C9541EA5DDC5008708B8 /* SecondViewController.swift */,
 				8813C9561EA5DDC5008708B8 /* Main.storyboard */,
+				88CE3AA01EA75B5600CF39F4 /* gamekindTableViewController.swift */,
+				88CE3A9E1EA74F4300CF39F4 /* addTableViewController.swift */,
+				88CE3A9C1EA74B6900CF39F4 /* defaultTableViewController.swift */,
 				8813C9591EA5DDC5008708B8 /* Assets.xcassets */,
 				8813C95B1EA5DDC5008708B8 /* LaunchScreen.storyboard */,
 				8813C95E1EA5DDC5008708B8 /* Info.plist */,
@@ -128,6 +150,23 @@
 			path = pokerManagerUITests;
 			sourceTree = "<group>";
 		};
+		88CE3A891EA73F9B00CF39F4 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SQLiteDB;
+			path = ../../quitSmoking/quitSmoking;
+			sourceTree = "<group>";
+		};
+		EFE4F8B76A23B6F2FC719DA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C0ED641E067CBCE2BB9181A /* Pods-pokerManager.debug.xcconfig */,
+				62E74C1AE9D09612F7FB6960 /* Pods-pokerManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8813C9771EA5DDC5008708B8 /* Build configuration list for PBXNativeTarget "pokerManager" */;
 			buildPhases = (
+				CC524AD3DFF7FE515A2D3EA3 /* [CP] Check Pods Manifest.lock */,
 				8813C9491EA5DDC5008708B8 /* Sources */,
 				8813C94A1EA5DDC5008708B8 /* Frameworks */,
 				8813C94B1EA5DDC5008708B8 /* Resources */,
+				A292F7303802AB62C1AFC240 /* [CP] Embed Pods Frameworks */,
+				EFC16E0D6AFDDAA78840B27D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +302,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A292F7303802AB62C1AFC240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokerManager/Pods-pokerManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC524AD3DFF7FE515A2D3EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFC16E0D6AFDDAA78840B27D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokerManager/Pods-pokerManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8813C9491EA5DDC5008708B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,7 +357,9 @@
 			files = (
 				8813C9551EA5DDC5008708B8 /* SecondViewController.swift in Sources */,
 				8813C9511EA5DDC5008708B8 /* AppDelegate.swift in Sources */,
-				8813C9531EA5DDC5008708B8 /* FirstViewController.swift in Sources */,
+				88CE3AA11EA75B5600CF39F4 /* gamekindTableViewController.swift in Sources */,
+				88CE3A9D1EA74B6900CF39F4 /* defaultTableViewController.swift in Sources */,
+				88CE3A9F1EA74F4300CF39F4 /* addTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +507,7 @@
 		};
 		8813C9781EA5DDC5008708B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0ED641E067CBCE2BB9181A /* Pods-pokerManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V93HHECRDR;
@@ -428,6 +521,7 @@
 		};
 		8813C9791EA5DDC5008708B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E74C1AE9D09612F7FB6960 /* Pods-pokerManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V93HHECRDR;
@@ -516,6 +610,7 @@
 				8813C9791EA5DDC5008708B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8813C97A1EA5DDC5008708B8 /* Build configuration list for PBXNativeTarget "pokerManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +619,7 @@
 				8813C97C1EA5DDC5008708B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8813C97D1EA5DDC5008708B8 /* Build configuration list for PBXNativeTarget "pokerManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +628,7 @@
 				8813C97F1EA5DDC5008708B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

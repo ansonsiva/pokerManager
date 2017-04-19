@@ -1,0 +1,18 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.6)
+  - LTMorphingLabel (0.4.0)
+  - SwiftDate (4.0.13)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift (= 4.0.6)
+  - LTMorphingLabel
+  - SwiftDate
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: b3015e819559ca76381f87a0833f44d178564603
+  LTMorphingLabel: d9a85f16ac306f0e07321d6819964deb2dc69638
+  SwiftDate: 8ec416bb1b5129d1f35e8efaed720421f41d42df
+
+PODFILE CHECKSUM: 796c94b1c5d5116503b952b000008e3565d70bda
+
+COCOAPODS: 1.2.0
