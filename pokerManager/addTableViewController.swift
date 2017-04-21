@@ -16,10 +16,10 @@ class addTableViewController: UITableViewController {
     @IBOutlet var limitLabel: UILabel!
     @IBOutlet var stakesLabel: UILabel!
     @IBOutlet var locationLabel: UILabel!
-    @IBOutlet var timecostLabel: UILabel!
-    @IBOutlet var buyinLabel: UILabel!
-    @IBOutlet var pumpingLabel: UILabel!
-    @IBOutlet var cashoutLabel: UILabel!
+//    @IBOutlet var timecostLabel: UILabel!
+//    @IBOutlet var buyinLabel: UILabel!
+//    @IBOutlet var pumpingLabel: UILabel!
+//    @IBOutlet var cashoutLabel: UILabel!
     @IBOutlet var remarkLabel: UILabel!
     
     
@@ -44,11 +44,11 @@ class addTableViewController: UITableViewController {
         stakesLabel.text = recordnow.stakes
         limitLabel.text = recordnow.limit
         locationLabel.text = recordnow.location
-        timecostLabel.text = String(recordnow.timecost)
-        buyinLabel.text = String(recordnow.buyin)
-        pumpingLabel.text = String(recordnow.pumping)
-        cashoutLabel.text = String(recordnow.cashout)
         remarkLabel.text = recordnow.remark
+//        timecostLabel.text = String(recordnow.timecost)
+//        buyinLabel.text = String(recordnow.buyin)
+//        pumpingLabel.text = String(recordnow.pumping)
+//        cashoutLabel.text = String(recordnow.cashout)
         print(remarkLabel.text!)
     }
     
