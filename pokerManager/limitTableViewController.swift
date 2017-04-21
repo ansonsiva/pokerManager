@@ -1,33 +1,15 @@
 //
-//  defaultTableViewController.swift
+//  limitTableViewController.swift
 //  pokerManager
 //
-//  Created by Huck on 2017/4/19.
+//  Created by Huck on 2017/4/20.
 //  Copyright © 2017年 JunZheng. All rights reserved.
 //
 
 import UIKit
 
-var gamekind = ["Texas Holdem","Omaha","HORSE","7 Card Stud","7 Card Stud 8","Omaha 8","Razz","Black Jack","Dealer's Choice"]
-var stakes = ["1/2","2/4","2/5","5/10","10/20","20/40","25/50","50/100","100/200","200/400","300/600","500/1000","1k/2k"]
-var limit = ["No Limit","Fixed Limit","Pot Limit","Mixed Limit","Spread Limit"]
-var location = ["德扑群","德友圈","PokerStars","888","大发","澳门","拉斯维加斯"]
+class limitTableViewController: UITableViewController {
 
-class defaultTableViewController: UITableViewController {
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,23 +29,28 @@ class defaultTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return limit.count
     }
-    
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "limitCell", for: indexPath)
+
+        cell.textLabel?.text = limit[indexPath.row]
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        recordnow.limit = limit[indexPath.row]
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

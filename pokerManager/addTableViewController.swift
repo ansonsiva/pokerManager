@@ -69,12 +69,7 @@ class addTableViewController: UITableViewController {
         return 9
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "buyinPopover" {
-            let popoverViewController = segue.destination
-            popoverViewController.popoverPresentationController?.delegate = self
-        }
-    }
+    
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -132,10 +127,4 @@ class addTableViewController: UITableViewController {
     }
     */
 
-}
-
-extension addTableViewController: UIPopoverPresentationControllerDelegate {
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.none
-    }
 }

@@ -26,7 +26,7 @@ class recordClass {
         self.buyin = 0
         self.timecost = 0
         self.cashout = 0
-        self.location = "线上"
+        self.location = "德扑圈"
         self.pumping = 0
         self.remark = "无"
     }
